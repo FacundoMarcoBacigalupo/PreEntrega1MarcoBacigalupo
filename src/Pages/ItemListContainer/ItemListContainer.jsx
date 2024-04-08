@@ -18,14 +18,12 @@ const ItemListContainer = () =>{
     const { category } = useParams()
 
 
-
         useEffect(() => {
             setLoading(true)
-
+            
             const colletionR = category
             ? query( collection(db, "Products"), where("category", "==", category) )
             : collection(db, "Products")
-
             getDocs(colletionR)
                 .then( response =>{
                     const productsAdapted = response.docs.map(doc =>{
@@ -33,18 +31,18 @@ const ItemListContainer = () =>{
                     })
                 setProducts(productsAdapted)
                 })
-
+                
                 .catch(error => console.error(error))
-
+                
                 .finally(() => setLoading(false))
         }, [category])
-
 
 
 
     if (loading){
         return <Loading />
     }
+
 
     return (
             <ItemList products={products} />

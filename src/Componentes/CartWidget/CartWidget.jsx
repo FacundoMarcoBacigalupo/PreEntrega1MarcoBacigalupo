@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { useCartContext } from "../../Context/CartContext";
 import "./EstilosWidget.css"
 
@@ -6,17 +6,13 @@ import "./EstilosWidget.css"
 const CartWidget = () => {
 	const { totalProducts } = useCartContext();
 
-
-
 	return (
-		<Fragment>
+		<div id="containerCart">
 			<i className="bi bi-cart3"></i>
-			<span className="numeroCarrito">{totalProducts() || ""}</span>
-		</Fragment>
+			<span className="numeroCarrito">{ totalProducts() || "" }</span>
+		</div>
 	);
 };
-
-
 
 
 export default CartWidget;

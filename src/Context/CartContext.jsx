@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 
 
 
-	const CartContext = React.createContext([]);
+const CartContext = React.createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
@@ -10,8 +10,6 @@ export const useCartContext = () => useContext(CartContext);
 
 const CartProvider = ({ children }) => {
 	const [cart, setCart] = useState([]);
-
-
 
 	const addProduct = (item, quantity) => {
 		if (isInCart(item.id)) {
@@ -29,11 +27,9 @@ const CartProvider = ({ children }) => {
 
 
 
-
 	const totalPrice = () => {
 		return cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity * productoActual.price, 0);
 	};
-
 
 
 
@@ -44,9 +40,7 @@ const CartProvider = ({ children }) => {
 		);
 
 
-
 	const clearCart = () => setCart([]);
-
 
 
 
@@ -55,10 +49,8 @@ const CartProvider = ({ children }) => {
 
 
 
-
 	const removeProduct = (id) =>
 		setCart(cart.filter(product => product.id !== id));
-
 
 
 

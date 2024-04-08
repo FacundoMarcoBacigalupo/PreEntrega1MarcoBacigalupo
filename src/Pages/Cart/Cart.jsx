@@ -26,7 +26,7 @@ const Cart = () => {
 				<h1 style={{fontSize:"35px", fontWeight:"bold", margin:"20px"}}>Tu carrito está vacío!</h1>
 				<Link style={{marginBottom:"20px", color:"#05B222", width:"60%", textAlign:"center"}} className="efectoBoton" to="/product/zapatillas">Hacer compras</Link>
 			</div>
-
+			
 			<picture>
 				<img style={{width:"90%", height:"600px", objectFit:"cover", objectPosition:"center"}} src={carrito} alt="Imagen cuando el carrito esta vacio" />
 			</picture>
@@ -36,20 +36,17 @@ const Cart = () => {
 
 
 
-
-
 	return (
 		<>
 			{cart.map((product,index) => (
 				<CardItem key={index} product={product} />
 			))}
-			<div style={{display: "flex", justifyContent: "center", alignItems:"center"}}>
+			<div style={{display: "flex", justifyContent: "center", alignItems:"center", marginTop:"150px"}}>
 				<h1 style={{fontSize:"35px", fontWeight:"bold", margin:"20px"}}>Total: {totalPrice()}</h1>
-
+				
 				<Link to='/checkout' style={{marginBottom:"20px", color:"#05B222", width:"80%", textAlign:"center"}} className="efectoBoton">Emitir compra</Link> 
 			</div>
-
-
+			
 			<article className="marquee">
 					<ul className="marquee__content">
 						<li className="marquee__item"><img src={img1} alt="img infinite"/></li>
@@ -66,7 +63,6 @@ const Cart = () => {
 		</>
 	)
 }
-
 
 
 export default Cart;

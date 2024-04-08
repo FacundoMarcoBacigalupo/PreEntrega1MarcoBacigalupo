@@ -11,7 +11,6 @@ import "./ItemDetail.css"
 const ItemDetail = ({ id, img, name, description, stock, price }) =>{
     const [quantityAdded, setQuantityAdded] = useState(0)
 
-
     const { addProduct } = useCartContext();
 
 
@@ -23,7 +22,6 @@ const ItemDetail = ({ id, img, name, description, stock, price }) =>{
         }
         addProduct(item, quantity)
     }
-
 
 
     const ShowQuantity = () =>{

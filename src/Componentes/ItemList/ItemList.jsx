@@ -5,15 +5,12 @@ import './ItemList.css'
 
 
 
-
 const ItemList = memo(({ products }) =>{
 
     return (
         <div className='posicionAppCard'>
             {
-                products.length > 0
-                ? products.map(data => <Item key={data.id} {...data} />)
-                : <Loading/>
+                products ? products.map(data => <Item key={data.id} {...data} />) : <Loading/>
             }
         </div>
     )

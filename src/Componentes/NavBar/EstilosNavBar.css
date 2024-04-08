@@ -1,4 +1,9 @@
-    /*Barra de navegacion*/
+.navbar-collapse {
+    transition: height 0.3s ease-out;
+    transition-delay: 0.1s;
+}
+
+
 .menuBar img{
 width: 30px;
 height: 30px;
@@ -7,7 +12,6 @@ height: 30px;
 .navbar-toggler{
 color: #1b1b1b;
 border-color: transparent;
-transition: all 2s;
 }
 
 .navbarColor{
@@ -56,7 +60,7 @@ object-position: center;
 }
 
 
-.barraNav{
+#navbarNav{
 justify-content: end;
 text-align: center;
 padding: 10px;
@@ -68,7 +72,6 @@ nav{
 }
 
 .estilos{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #d1d1d1; 
 }
 
@@ -84,4 +87,3 @@ li:hover{
     filter: drop-shadow(0px 2px 3px #696969);
     transition: all .5s;
 }
-                                                /*Fin barra de navegacion*/
