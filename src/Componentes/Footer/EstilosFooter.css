@@ -119,6 +119,7 @@
 
 
 
+
 @media (max-width: 800px){
     .containerFooter{
         grid-template-rows: auto auto auto auto;
@@ -145,7 +146,6 @@
     }
 
 }
-
 
 
 

@@ -1,6 +1,7 @@
 import React from "react";
 import { useCartContext } from "../../Context/CartContext";
-import "./EstilosWidget.css"
+import "./estilosWidget.css"
+
 
 
 const CartWidget = () => {

@@ -3,7 +3,7 @@ import LogoNbStyle from "../../assets/images/LogoNbStyle.jpg"
 import tiktok from '../../assets/images/tiktok-chico.png'
 import instagram from '../../assets/images/instagram-chico.png'
 import facebook from '../../assets/images/facebook-chico.png'
-import "./EstilosFooter.css"
+import "./estilosFooter.css"
 
 
 export const Footer = () =>{

@@ -1,5 +1,5 @@
 import useItemCout from "../../Hooks/UseItemCout"
-import "./EstilosItemCount.css"
+import "./estilosItemCount.css"
 
 
 const ItemCount = ({ stock, initial=1, onAdd }) =>{

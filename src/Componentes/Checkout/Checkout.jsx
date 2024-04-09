@@ -5,7 +5,7 @@ import { Timestamp, addDoc, collection, documentId, getDocs, query, where, write
 import Loading from '../Loading/Loading'
 import CheckoutForm from '../CheckoutForm/CheckoutForm'
 import thx from '../../assets/images/thankYou.gif'
-import "./Checkout.css"
+import "./checkout.css"
 
 
 

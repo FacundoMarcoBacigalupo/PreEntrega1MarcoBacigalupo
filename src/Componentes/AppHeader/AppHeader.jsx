@@ -1,7 +1,5 @@
 import React from 'react'
-import "./EstilosHeader.css"
-
-
+import "./estilosHeader.css"
 
 
 export const AppHeader = ({titulo}) => {
@@ -12,7 +10,6 @@ export const AppHeader = ({titulo}) => {
             </div>
     )
 }
-
 
 
 export default AppHeader
