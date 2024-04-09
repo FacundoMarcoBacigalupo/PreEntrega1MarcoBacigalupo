@@ -1,4 +1,4 @@
-import useItemCout from "../../Hooks/UseItemCout"
+import useItemCout from "../../Hooks/UseItemCout.jsx"
 import "./estilostemcount.css"
 
 
