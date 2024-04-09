@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useCartContext } from '../../Context/CartContext'
 import swal from "sweetalert2"
-import "./checkoutform.css"
+import "./checkoutrm.css"
 
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./estilostem.css"
+import "./estilotem.css"
 
 
 const Item = ({ id, img, name, stock, price }) => {

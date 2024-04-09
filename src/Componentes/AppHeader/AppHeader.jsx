@@ -1,5 +1,5 @@
 import React from 'react'
-import "./estilosheader.css"
+import "./estiloheade.css"
 
 
 export const AppHeader = ({titulo}) => {
