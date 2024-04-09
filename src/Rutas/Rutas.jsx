@@ -2,13 +2,13 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ItemListContainer from '../Pages/ItemListContainer/ItemListContainer.jsx'
 import ItemDetallesContainer from '../Pages/ItemListContainer/ItemDetallesContainer/ItemDetallesContainer.jsx'
-import NavBar from '../Componentes/Navbar/Navbar.jsx'
 import Footer from '../Componentes/Footer/Footer'
 import Home from '../Pages/Home/Home.jsx'
 import Historia from '../Pages/Historia/Historia.jsx'
 import Error404 from '../Pages/Error404/Error404.jsx'
 import Cart from '../Pages/Cart/Cart.jsx'
 import Checkout from '../Componentes/Checkout/Checkout.jsx'
+import NavBar from '../Componentes/Navbar/Navbar.jsx'
 
 
 const Rutas = () =>{
