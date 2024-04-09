@@ -8,7 +8,7 @@ import Historia from '../Pages/Historia/Historia.jsx'
 import Error404 from '../Pages/Error404/Error404.jsx'
 import Cart from '../Pages/Cart/Cart.jsx'
 import Checkout from '../Componentes/Checkout/Checkout.jsx'
-import NavBar from '../Componentes/Navbar/Navbar.jsx'
+import NavBar from "../Componentes/NavBar/NavBar.jsx"
 
 
 const Rutas = () =>{
