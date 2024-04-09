@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Historia.css"
+import "./historia.css"
 
 
 const Historia = () => {
