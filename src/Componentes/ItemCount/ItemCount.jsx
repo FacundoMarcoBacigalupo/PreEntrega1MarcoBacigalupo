@@ -1,4 +1,4 @@
-import Useitemcout from "../../Hooks/Useitemcout.jsx"
+import Useitemcout from "../../Hooks/Useitemcout"
 import "./estilostemcount.css"
 
 
