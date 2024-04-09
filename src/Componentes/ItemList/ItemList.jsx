@@ -1,8 +1,7 @@
 import { memo } from 'react'
 import Item from '../Item/Item'
 import Loading from '../Loading/Loading'
-import './itemlist.css'
-
+import './temlis.css'
 
 
 const ItemList = memo(({ products }) =>{
