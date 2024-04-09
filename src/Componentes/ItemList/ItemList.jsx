@@ -1,7 +1,7 @@
 import { memo } from 'react'
 import Item from '../Item/Item'
 import Loading from '../Loading/Loading'
-import './itemList.css'
+import './itemlist.css'
 
 
 

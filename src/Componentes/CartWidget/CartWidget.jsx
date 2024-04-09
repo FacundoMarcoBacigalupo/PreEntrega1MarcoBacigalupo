@@ -1,6 +1,6 @@
 import React from "react";
 import { useCartContext } from "../../Context/CartContext";
-import "./estilosWidget.css"
+import "./estiloswidget.css"
 
 
 
