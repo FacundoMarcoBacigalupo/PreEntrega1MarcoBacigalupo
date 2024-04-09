@@ -9,20 +9,16 @@ import "./Checkout.css"
 
 
 
-
-
 const Checkout = () =>{
     const [loading, setLoading] = useState(false)
     const [orderId, setOrderId] = useState("")
 
-
 	const { cart, totalPrice, clearCart } = useCartContext();
-
 
 
     const createOrder = async({name, phone, email}) =>{
         setLoading(true)
-
+        
         try{
             const objetOrder ={
                 buyer: {
@@ -35,27 +31,24 @@ const Checkout = () =>{
                 date: Timestamp.fromDate(new Date())
             }
 
-
             const batch = writeBatch(db)
-
+            
             const outOfStock = []
-
+            
             const ids = cart.map(prod => prod.id)
-
+            
             const producsAddedFromFirestore = await getDocs( query( collection(db, "Products"), where(documentId(), "in", ids)))
-
+            
             const { docs } = producsAddedFromFirestore
-
-
 
 
             docs.forEach(doc =>{
                 const dataDoc = doc.data()
                 const stockDb = dataDoc.stock
-
+                
                 const productAddedToCart = cart.find(p => p.id === doc.id)
                 const prodQuantiy = productAddedToCart?.quantity
-
+                
                 if(stockDb >= prodQuantiy){
                     batch.update( doc.ref, {stock: stockDb - prodQuantiy})
                 }
@@ -67,11 +60,11 @@ const Checkout = () =>{
 
             if(outOfStock.length === 0){
                 await batch.commit()
-
+                
                 const col  = collection(db, "orders")
-
+                
                 const orderAdded = await addDoc(col, objetOrder)
-
+                
                 setOrderId(orderAdded.id)
                 clearCart()
             }
@@ -79,7 +72,7 @@ const Checkout = () =>{
                 console.error("No hay productos que estén fuera de stock")
             }
         }
-
+        
         catch (error){
             console.error(error)
         }
@@ -112,7 +105,5 @@ const Checkout = () =>{
         </div>
     )
 }
-
-
 
 export default Checkout

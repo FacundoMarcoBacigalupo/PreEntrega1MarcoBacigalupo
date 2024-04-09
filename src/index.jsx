@@ -7,9 +7,7 @@ import "./assets/styles/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <ReactDOM>
-        <App />
-    </ReactDOM>
+    <App />
 );
 
 
