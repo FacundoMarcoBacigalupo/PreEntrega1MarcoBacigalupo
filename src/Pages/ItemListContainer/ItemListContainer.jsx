@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import ItemList from '../../Componentes/ItemList/ItemList'
-import "./estilosContainer.css"
+import "./estiloscon.css"
 
 import { getDocs, collection, where, query } from 'firebase/firestore'
 import { db } from '../../FireBase/firebase.config'
