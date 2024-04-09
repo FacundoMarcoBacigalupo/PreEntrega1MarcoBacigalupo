@@ -1,8 +1,7 @@
 import { useState } from 'react'
 
 
-
-const useItemCout = (initial, stock) => {
+const UseItemCout = (initial, stock) => {
     const [cantidad, setCantidad] = useState(initial)
 
 
@@ -26,4 +25,4 @@ const useItemCout = (initial, stock) => {
 
 
 
-export default useItemCout
+export default UseItemCout
