@@ -1,9 +1,9 @@
-import Useitemcout from "../../Hooks/Useitemcout"
+import UseItemCout from "../../Hooks/UseItemCout";
 import "./estilostemcount.css"
 
 
 const ItemCount = ({ stock, initial=1, onAdd }) =>{
-    const {cantidad, sumar, restar} = Useitemcout(initial, stock)
+    const {cantidad, sumar, restar} = UseItemCout(initial, stock)
 
     return (
         <div className='cantidad'>
