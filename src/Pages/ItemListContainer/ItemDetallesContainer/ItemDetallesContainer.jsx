@@ -16,14 +16,14 @@ const ItemDetallesContainer = () =>{
 
         useEffect(() => {
             setLoading(true)
-
+            
             const docR = doc( db, "Products", itemId )
             getDoc(docR)
                 .then( response =>{
                     const productsAdapted = {id:response.id, ...response.data()}
                     setProducts(productsAdapted)
                 } )
-
+                
                 .catch( error => console.error(error))
                 .finally( () => setLoading(false))
         }, [itemId])

@@ -1,7 +1,6 @@
 import Usetemcout from "../../hooks/Usetemcout.jsx"
 import "./estilostemcount.css"
 
-
 const ItemCount = ({ stock, initial=1, onAdd }) =>{
     const {cantidad, sumar, restar} = Usetemcout(initial, stock)
 
